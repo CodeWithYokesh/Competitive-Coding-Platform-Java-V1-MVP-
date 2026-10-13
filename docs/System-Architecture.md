@@ -40,7 +40,5 @@ flowchart TD
     Worker -->|"6. Mount Code & Spawn Container"| Sandbox
     Sandbox -->|"7. Stream Execution Results (stdout/stderr)"| Worker
     Worker -->|"8. Persist Verdict & Metrics"| DB
-    Client <..->"9. Poll / WebSocket Status Update"| DBnIO/S3).
-5. **Isolated Execution:** The Judge Worker writes the user's code to a temporary directory, invokes a Docker container with strict memory/CPU limits, compiles `Main.java`, and executes it against the input test cases.
-6. **Verdict & Storage:** The Judge Worker compares container standard output against expected output, determines the final verdict (`Accepted`, `Wrong Answer`, `Time Limit Exceeded`, `Compile Error`), and updates the PostgreSQL database record.
+    DB -.->"9. Poll / WebSocket Status Update"| Clientile Error`), and updates the PostgreSQL database record.
 7. **Result Notification:** The Frontend receives the updated verdict via REST polling or WebSockets.
