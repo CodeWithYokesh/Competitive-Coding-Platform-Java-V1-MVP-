@@ -1,4 +1,4 @@
-# 🏗️ V1 System Architecture & Technical Specification
+# V1 System Architecture & Technical Specification
 
 > **Project:** Competitive Coding Platform (Java V1 MVP)  
 > **Author:** @YOKESH T  
@@ -40,5 +40,4 @@ flowchart TD
     Worker -->|"6. Mount Code & Spawn Container"| Sandbox
     Sandbox -->|"7. Stream Execution Results (stdout/stderr)"| Worker
     Worker -->|"8. Persist Verdict & Metrics"| DB
-    DB -.->"9. Poll / WebSocket Status Update"| Clientile Error`), and updates the PostgreSQL database record.
-7. **Result Notification:** The Frontend receives the updated verdict via REST polling or WebSockets.
+    DB -.->"9. Poll / WebSocket Status Update"| Client
