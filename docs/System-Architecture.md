@@ -1,11 +1,11 @@
-# 🏗️ System Architecture — Java Judge Platform (V1 MVP)
+# System Architecture Java Judge Platform (V1 MVP)
 
 | | |
 |---|---|
-| **Document status** | Living document — V1 MVP baseline |
+| **Document status** | Living document - V1 MVP baseline |
 | **Audience** | Backend, frontend, judge-worker and DevOps contributors |
 | **Scope** | Student submissions, admin management, contest execution, isolated Java 21 code execution |
-| **Hosting model** | 100% local / free — runs on a standard developer machine with Docker, no cloud dependency |
+| **Hosting model** | 100% local / free - runs on a standard developer machine with Docker, no cloud dependency |
 
 ---
 
