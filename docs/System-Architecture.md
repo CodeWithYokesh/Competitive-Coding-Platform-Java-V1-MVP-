@@ -1,4 +1,4 @@
-# 🏗️ V1 System Architecture & Technical Specification
+# V1 System Architecture & Technical Specification
 
 > **Project:** Competitive Coding Platform (Java V1 MVP)  
 > **Author:** @YOKESH T  
